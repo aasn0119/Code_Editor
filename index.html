@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML, CSS, JavaScript</title>
+
+    <!-- Font-Awesome Cdn Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- StyleSheet -->
+    <link rel="stylesheet" href="./styles/style.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <label><i class="fab fa-html5"></i> HTML</label>
+            <textarea id="html-code" onkeyup="run()"></textarea>
+
+            <label ><i class="fab fa-css3-alt"></i> CSS</label>
+            <textarea id="css-code" onkeyup="run()"></textarea>
+            
+            <label ><i class="fab fa-js-square"></i> JavaScript</label>
+            <textarea id="js-code" onkeyup="run()"></textarea>
+        </div>
+        <div class="right">
+            <label for=""><i class="fas fa-play"></i> OUTPUT</label>
+            <iframe id="output"></iframe>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
